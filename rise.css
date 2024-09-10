@@ -1,0 +1,27 @@
+.cm-content {
+    font-size: 24px;
+}
+
+.rise-enabled .jp-OutputArea pre {
+    font-size: 24px;
+}
+
+.rise-enabled .jp-RenderedHTMLCommon table {
+  font-size: 30px;
+}
+
+.jp-OutputArea .jp-RenderedText {
+  padding-left: 0px;
+}
+
+div.input_prompt {
+    opacity: 0;
+}
+
+div.output_prompt {
+    opacity: 0;
+}
+
+.jp-RenderedHTMLCommon {
+    font-family: "Newsreader Display", serif;
+}

@@ -23,5 +23,21 @@ div.output_prompt {
 }
 
 .jp-RenderedHTMLCommon {
-    font-family: "Newsreader Display", serif;
+    font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+
+.jp-RenderedHTMLCommon h1, .jp-RenderedHTMLCommon h2, .jp-RenderedHTMLCommon h3, .jp-RenderedHTMLCommon h4, .jp-RenderedHTMLCommon h5, .jp-RenderedHTMLCommon h6 {
+    font-family: "Cormorant Garamond", system-ui, serif;
+}
+
+.rise-enabled i {
+  font-size: unset;
+}
+
+.jp-RenderedHTML {
+    font-size: 24px;
+}
+
+.jp-RenderedHTMLCommon pre, .jp-RenderedHTMLCommon code {
+    font-size: 24px;
 }

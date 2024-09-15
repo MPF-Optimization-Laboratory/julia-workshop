@@ -72,6 +72,7 @@ end
 #  - You should also define `convert(::Type{Int}, ...)` to turn the Peano numbers into regular ints.
 #  - The opposite conversion has been done for you
 # HINT: Think recursively! Remember dispatch!
+# HINT: Don't try to use too large of numbers. You'll find you're implementing arithmetic _in the type system_, so this can work the compiler pretty hard!
 
 import Base: +, *, convert
 

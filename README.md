@@ -4,27 +4,14 @@
 
 _Authors: [Mia Kramer](https://github.com/miakramer)_
 
-This workshop series is intended for beginners to intermediate users of Julia, but who have at least comfortable with other programming languages. While intended for applied mathematicians, the focus of this workshop series is on the _rationale_ of Julia rather than any particular application. The workshop is divided into three days, which are roughly three hours long including a break in the middle:
+See [the website](https://mpf-optimization-laboratory.github.io/julia-workshop/).
 
-1. Introductions: an introduction to Julia and multiple dispatch 
-2. Types and performance: more on Julia's type system and how it allows Julia to be a high performance language
-3. Packages, debugging, and writing a good program
+This workshop series is intended for beginners to intermediate users of Julia, but who have at least comfortable with other programming languages. While intended for applied mathematicians, the focus of this workshop series is on the _rationale_ of Julia rather than any particular application. The workshop is divided into five days, which are roughly two hours long:
 
-The notebooks are intended for use using the excellent [RISE](https://rise.readthedocs.io/en/stable/).
+1. Introductions: installing Julia; an introduction to Julia; touching on its types.
+2. Multiple dispatch: covering multiple dispatch; iteration; interfaces.
+3. Types and performance: more on Julia's type system and how it allows Julia to be a high performance language
+4. Benchmarking; packages
+5. Debugging; designing programs; macros
 
-## Day 1
-
-- The notebook is `day1/Day1Presentation.ipynb`
-- The between-workshop problems are `day1/problems.jl`, and their solutions are in `day1/problems_solutions.jl`
-
-## Day 2
-
-- The notebook is `day2/Day2Presentation.ipynb`
-- The during-workshop problems are `day2/typeinstability.jl`
-- The between-workshop problems are `day2/problems.md`
-
-## Day 3
-
-- The notebook is `day3/Day3Presentation.ipynb`
-- The starter code for the demo package is `day3/DemoPackage.jl`
-- The starter docs for the demo package is `day3/index.md`
+The notebooks are intended for use using the excellent [RISE](https://rise.readthedocs.io/en/stable/) ([JupyterLab 4 version](https://github.com/jupyterlab-contrib/rise)).

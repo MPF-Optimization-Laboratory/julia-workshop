@@ -30,27 +30,7 @@ end
 # ┏━━━━━━━━━━━┓
 # ┃ Problem 3 ┃
 # ┗━━━━━━━━━━━┛
-#
-# Problem 3: Peano Arithmetic
-# Peano arithmetic provides a compact axiomatic description of the natural numbers. An informal description is:
-#  - There exists 0.
-#  - There exists the successor function, S(). S(x) != 0 ∀ x
-#  - S(x) == S(y) implies x == y
-# From this we can recursively construct the naturals. Further, we can define addition recursively:
-#  - +(x, 0)    = x            (and similar methods)
-#  - +(x, S(y)) = S(x + y)
-# As well as multiplication:
-#  - *(x, 0)    = 0            (and similar methods)
-#  - *(x, S(y)) = x + (x * y)
-# For your implementation, you'll define types and methods to compute Peano arithmetic.
-#  - There should be two subtypes of `PeanoNumber`: `Zero` and `S`
-#    - `Zero` should have no fields
-#    - `S` should have a single parameter `P <: PeanoNumber`, and a single field of type `P`
-#  - You should define + and *
-#  - You should also define `convert(::Type{Int}, ...)` to turn the Peano numbers into regular ints.
-#  - The opposite conversion has been done for you
-# HINT: Think recursively! Remember dispatch!
-# HINT: Don't try to use too large of numbers. You'll find you're implementing arithmetic _in the type system_, so this can work the compiler pretty hard!
+
 
 import Base: +, *, convert
 

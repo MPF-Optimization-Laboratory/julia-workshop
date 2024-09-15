@@ -2,7 +2,7 @@
     font-family: JuliaMono;
     font-weight: 300;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-Light.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-Light.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -10,7 +10,7 @@
     font-family: JuliaMono;
     font-weight: 400;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-Regular.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-Regular.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -18,7 +18,7 @@
     font-family: JuliaMono;
     font-weight: 500;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-Medium.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-Medium.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -26,7 +26,7 @@
     font-family: JuliaMono;
     font-weight: 600;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-SemiBold.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-SemiBold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -34,7 +34,7 @@
     font-family: JuliaMono;
     font-weight: 700;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-Bold.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-Bold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -42,7 +42,7 @@
     font-family: JuliaMono;
     font-weight: 800;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-ExtraBold.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-ExtraBold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -50,7 +50,7 @@
     font-family: JuliaMono;
     font-weight: 900;
     font-style: normal;
-    src: url("/assets/JuliaMono/JuliaMono-Black.woff2") format("woff2");
+    src: local("JuliaMono"), url("/julia-workshop/assets/JuliaMono/JuliaMono-Black.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -58,7 +58,7 @@
     font-family: "Libertinus Serif";
     font-weight: 400;
     font-style: normal;
-    src: url("/assets/Libertinus/LibertinusSerif-Regular.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-Regular.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -66,7 +66,7 @@
     font-family: "Libertinus Serif";
     font-weight: 400;
     font-style: italic;
-    src: url("/assets/Libertinus/LibertinusSerif-Italic.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-Italic.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -74,7 +74,7 @@
     font-family: "Libertinus Serif";
     font-weight: 600;
     font-style: normal;
-    src: url("/assets/Libertinus/LibertinusSerif-Semibold.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-Semibold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -82,7 +82,7 @@
     font-family: "Libertinus Serif";
     font-weight: 600;
     font-style: italic;
-    src: url("/assets/Libertinus/LibertinusSerif-SemiboldItalic.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-SemiboldItalic.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -90,7 +90,7 @@
     font-family: "Libertinus Serif";
     font-weight: 700;
     font-style: normal;
-    src: url("/assets/Libertinus/LibertinusSerif-Bold.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-Bold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -98,7 +98,7 @@
     font-family: "Libertinus Serif";
     font-weight: 700;
     font-style: italic;
-    src: url("/assets/Libertinus/LibertinusSerif-BoldItalic.woff2") format("woff2");
+    src: local("Libertinus Serif"), url("/julia-workshop/assets/Libertinus/LibertinusSerif-BoldItalic.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -106,7 +106,7 @@
     font-family: "Libertinus Sans";
     font-weight: 400;
     font-style: normal;
-    src: url("/assets/Libertinus/LibertinusSans-Regular.woff2") format("woff2");
+    src: local("Libertinus Sans"), url("/julia-workshop/assets/Libertinus/LibertinusSans-Regular.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -114,7 +114,7 @@
     font-family: "Libertinus Sans";
     font-weight: 400;
     font-style: italic;
-    src: url("/assets/Libertinus/LibertinusSans-Italic.woff2") format("woff2");
+    src: local("Libertinus Sans"), url("/julia-workshop/assets/Libertinus/LibertinusSans-Italic.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 
@@ -122,7 +122,7 @@
     font-family: "Libertinus Sans";
     font-weight: 700;
     font-style: normal;
-    src: url("/assets/Libertinus/LibertinusSans-Bold.woff2") format("woff2");
+    src: local("Libertinus Sans"), url("/julia-workshop/assets/Libertinus/LibertinusSans-Bold.woff2") format("woff2");
     text-rendering: optimizeLegibility;
 }
 

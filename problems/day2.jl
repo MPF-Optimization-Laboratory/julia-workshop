@@ -2,88 +2,60 @@
 # ┃ Problem 1 ┃
 # ┗━━━━━━━━━━━┛
 
+
+
 import Base: iterate
 
 
 struct Primes
     n::Int
-    sieve::Vector{Bool}
+    sieve::?
 end
 
-# find the index of the next true after the given index in a sieve
-# returns nothing if no such index exists
-function findnexttrue(i::Int, sieve::Vector{Bool})
-    for j in (i+1):length(sieve)
-        if sieve[j]
-            return j
-        end
-    end
-    nothing
-end
-# an alternate version of this uses the built-in `findfirst` function:
-#    findnexttrue(i::Int, sieve::Vector{Bool}) = findfirst(identity, sieve[i:end])
 
-function Primes(n::Int)
-    sieve = ones(Bool, n)
-    sieve[1] = false
+# iterate() methods here
 
-    p = 1
-    while true
-        p = findnexttrue(p, sieve)
-        if isnothing(p)
-            break
-        end
-
-        for i in (2p):p:n
-            sieve[i] = false
-        end
-    end
-
-    Primes(n, sieve)
-end
-
-# our state here is just the last prime we found
-function iterate(p::Primes, state::Int=1)
-    nstate = findnexttrue(state, p.sieve)
-    if isnothing(nstate)
-        nothing
-    else
-        nstate, nstate
-    end
-end
 
 
 # ┏━━━━━━━━━━━┓
 # ┃ Problem 2 ┃
 # ┗━━━━━━━━━━━┛
 
-import Base: getindex, size, adjoint
 
-
-struct OuterProduct{T} <: AbstractMatrix{T}
-    u::Vector{T}
-    v::Vector{T}
+struct OuterProduct{???}
+    ???
 end
-
-getindex(M::OuterProduct, i::Int, j::Int) = M.u[i] * M.v[j]
-size(M::OuterProduct) = length(M.u), length(M.v)
-adjoint(M::OuterProduct) = OuterProduct(M.v, M.u)
-
 
 
 # ┏━━━━━━━━━━━┓
 # ┃ Problem 3 ┃
 # ┗━━━━━━━━━━━┛
+#
+# Problem 3: Peano Arithmetic
+# Peano arithmetic provides a compact axiomatic description of the natural numbers. An informal description is:
+#  - There exists 0.
+#  - There exists the successor function, S(). S(x) != 0 ∀ x
+#  - S(x) == S(y) implies x == y
+# From this we can recursively construct the naturals. Further, we can define addition recursively:
+#  - +(x, 0)    = x            (and similar methods)
+#  - +(x, S(y)) = S(x + y)
+# As well as multiplication:
+#  - *(x, 0)    = 0            (and similar methods)
+#  - *(x, S(y)) = x + (x * y)
+# For your implementation, you'll define types and methods to compute Peano arithmetic.
+#  - There should be two subtypes of `PeanoNumber`: `Zero` and `S`
+#    - `Zero` should have no fields
+#    - `S` should have a single parameter `P <: PeanoNumber`, and a single field of type `P`
+#  - You should define + and *
+#  - You should also define `convert(::Type{Int}, ...)` to turn the Peano numbers into regular ints.
+#  - The opposite conversion has been done for you
+# HINT: Think recursively! Remember dispatch!
+# HINT: Don't try to use too large of numbers. You'll find you're implementing arithmetic _in the type system_, so this can work the compiler pretty hard!
 
 import Base: +, *, convert
 
 
 abstract type PeanoNumber <: Integer end
-
-struct Zero <: PeanoNumber end
-struct S{P <: PeanoNumber} <: PeanoNumber
-    of::P
-end
 
 function convert(::Type{PeanoNumber}, x::Int)
     if x < 0
@@ -95,20 +67,11 @@ function convert(::Type{PeanoNumber}, x::Int)
     end
 end
 
-convert(::Type{Int}, ::Zero) = 0
-convert(::Type{Int}, s::S)   = 1 + convert(Int, s.of)
-
-+(x::PeanoNumber, ::Zero) = x
-+(::Zero, x::PeanoNumber) = x
-+(::Zero, ::Zero) = Zero()
-+(x::S, y::S) = S(+(x, y.of))
-
-*(::PeanoNumber, ::Zero) = Zero()
-*(::Zero, ::PeanoNumber) = Zero()
-*(::Zero, ::Zero) = Zero()
-*(x::S, y::S) = x + (x * y.of)
 
 
+# ┏━━━━━━━┓
+# ┃ Tests ┃
+# ┗━━━━━━━┛
 
 function test_primes()
     answers = [2, 3, 5, 7, 11]

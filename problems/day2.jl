@@ -22,7 +22,7 @@ end
 # ┗━━━━━━━━━━━┛
 
 
-struct OuterProduct{???}
+struct OuterProduct{???} <: AbstractMatrix{???}
     ???
 end
 
